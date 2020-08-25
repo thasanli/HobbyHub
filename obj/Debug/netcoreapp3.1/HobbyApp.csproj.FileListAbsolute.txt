@@ -1,5 +1,4 @@
 /Users/tural.hasanli/Desktop/HobbyApp/bin/Debug/netcoreapp3.1/appsettings.Development.json
-/Users/tural.hasanli/Desktop/HobbyApp/bin/Debug/netcoreapp3.1/appsettings.json
 /Users/tural.hasanli/Desktop/HobbyApp/bin/Debug/netcoreapp3.1/Properties/launchSettings.json
 /Users/tural.hasanli/Desktop/HobbyApp/bin/Debug/netcoreapp3.1/HobbyApp.deps.json
 /Users/tural.hasanli/Desktop/HobbyApp/bin/Debug/netcoreapp3.1/HobbyApp.runtimeconfig.json
@@ -65,3 +64,4 @@
 /Users/tural.hasanli/Desktop/HobbyApp/obj/Debug/netcoreapp3.1/HobbyApp.dll
 /Users/tural.hasanli/Desktop/HobbyApp/obj/Debug/netcoreapp3.1/HobbyApp.pdb
 /Users/tural.hasanli/Desktop/HobbyApp/obj/Debug/netcoreapp3.1/HobbyApp.genruntimeconfig.cache
+/Users/tural.hasanli/Desktop/HobbyApp/bin/Debug/netcoreapp3.1/appsettings.json
