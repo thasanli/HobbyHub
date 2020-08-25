@@ -1,0 +1,55 @@
+
+
+<div class="ViewHobbyContainer">
+
+<h1>@ViewBag.data.HobbyName</h1>
+        <div class = "hobbyData">
+            <label>Description: </label>
+            <p class = "hobbyDescriptionP">@ViewBag.data.Description</p>        
+        </div>
+
+
+<div class="EuthusiastData">
+    <div>
+    <p>Hiking Enthusiasts: </p>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Proficiency</th>
+        </tr>
+       @foreach(var i in ViewBag.data.Euthusiasts)
+    { 
+        <tr>
+            <td>@i.User.FirstName</td>
+            <td>@i.Proficiency</td>
+        </tr>
+    }        
+    </table>
+</div>
+
+<div>
+    @model Euthusiasts
+
+     @if(ViewBag.UserId == @ViewBag.data.UserId)
+        {
+        <a href="edit/@ViewBag.data.HobbyId" class="linkA">Edit Hobby</a>
+        }
+
+<form asp-action="addEuthusiasts" asp-controller="home" asp-route-id="@ViewBag.data.HobbyId" method="post" id="AddHobbyForm">
+   <p>Become an Enthusiast!</p>
+    <div class="inputDivs">
+        <span asp-validation-for="Proficiency"></span>
+        <select asp-for="Proficiency">
+            <option value="Top">Top</option>
+            <option value="Intermidiate">Intermidiate</option>
+            <option value="Expert">Expert</option>
+        </select>
+    </div>
+    <button type="submit"> Add to Hobbies</button>
+</form>
+</div>
+
+</div>
+
+</div>
+

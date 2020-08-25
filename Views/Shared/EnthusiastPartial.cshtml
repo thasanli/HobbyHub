@@ -1,0 +1,15 @@
+@model Euthusiasts
+
+
+<form asp-action="addEuthusiasts" asp-controller="home" method="post">
+    <h3>Log in</h3>
+    <div class="inputDivs">
+        <span asp-validation-for="Proficiency"></span>
+        <select asp-for="Proficiency">
+            <option value="Top">Top</option>
+            <option value="Top">Intermidiate</option>
+            <option value="Top">Expert</option>
+        </select>
+    </div>
+    <button type="submit"> Add to Hobbies</button>
+</form>

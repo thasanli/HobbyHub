@@ -1,0 +1,22 @@
+@model List<Hobby>
+
+
+<div class="HobbyContainer">
+    <h1>Hobbies</h1>
+    <table>
+            <tr>
+                <th>Name</th>
+                <th>Enthusiasts</th>
+            </tr>
+            @foreach (var item in Model)
+            { 
+                <tr> 
+                    <td><a href="viewHobby/@item.HobbyId">@item.HobbyName</a></td>
+                    <td>@item.Euthusiasts.Count</td>
+                </tr>
+            }
+    </table>
+
+    <a href="hobby/new" class="linkA">Create a Hobby</a>
+</div>
+

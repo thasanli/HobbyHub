@@ -1,0 +1,23 @@
+@model Hobby
+
+
+<h1> Edit a Hobby</h1>
+
+<form asp-action="EditHubby" asp-controller="home" asp method="post" asp-route-id="@Model.HobbyId" class="CreateForm">
+    <h1> Edit a Hobby</h1>
+    <div class = "inputDivs">
+        <span asp-validation-for="HobbyName"></span>
+        <div>
+            <label asp-for="HobbyName">Name </label>
+            <input asp-for="HobbyName" type="text" value="@Model.HobbyName">
+        </div>
+    </div>
+        <div class = "inputDivs">
+        <span asp-validation-for="Description"></span>
+        <div>
+            <label asp-for="Description">Description </label>
+            <input asp-for="Description" type="text" value="@Model.Description">
+        </div>
+    </div>
+        <button type="submit">Create</button>
+</form>
